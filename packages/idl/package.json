@@ -1,0 +1,24 @@
+{
+  "name": "@flott/idl",
+  "version": "0.1.0",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    },
+    "./flott.json": {
+      "default": "./flott.json"
+    }
+  },
+  "files": [
+    "index.ts",
+    "flott.ts",
+    "flott.json"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

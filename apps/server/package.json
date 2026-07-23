@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@anchor-lang/core": "^1.1.2",
+    "@flott/db": "*",
+    "@flott/idl": "*",
+    "@flott/shared": "*",
+    "@solana/keychain-turnkey": "^1.4.0",
+    "@solana/signers": "^7.0.0",
+    "@solana/web3.js": "^1.98.4",
+    "@turnkey/sdk-server": "^7.0.0",
+    "@turnkey/solana": "^1.1.32",
+    "bcrypt": "^5.1.1",
+    "hono": "^4.12.30",
+    "jsonwebtoken": "^9.0.2",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/bcrypt": "^5.0.2"
+  }
+}
