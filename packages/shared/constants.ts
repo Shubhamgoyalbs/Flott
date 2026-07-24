@@ -2,13 +2,10 @@
 export const API_PREFIX = '/api/v1';
 export const API_VERSION = 'v1';
 
-// Auth Constants
-export const AUTH_ROUTES = {
-	SIGNUP: '/signup',
-	SIGNIN: '/signin',
-	SIGNOUT: '/signout',
-	REFRESH: '/refresh',
-} as const;
+// Queue Name
+export const QUEUE_NAMES = {
+	INDEXER: 'indexer'
+}
 
 // Account Status
 export const ACCOUNT_STATUS = {
@@ -56,15 +53,6 @@ export const SOLANA_CONFIG = {
 export const SIGNING_MESSAGES = {
 	SIGNUP: `Welcome to Flott! Please sign this message to verify your wallet ownership and create your account.`,
 	VERIFY_ACTION: (action: string) => `Please sign this message to verify you want to perform: ${action}`,
-} as const;
-
-// Validation Constants
-export const VALIDATION = {
-	MIN_USERNAME_LENGTH: 3,
-	MAX_USERNAME_LENGTH: 50,
-	MIN_PASSWORD_LENGTH: 8,
-	MIN_PUBKEY_LENGTH: 32,
-	MAX_PUBKEY_LENGTH: 44,
 } as const;
 
 // JWT Constants

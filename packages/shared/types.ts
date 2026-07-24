@@ -9,3 +9,10 @@ export type AuthVariables = {
 	email: string;
 	pubkey: string;
 };
+
+export type RedisConfig = {
+	host: string;
+	port: number;
+	password?: string;
+	tls?: boolean;
+}

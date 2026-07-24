@@ -35,5 +35,7 @@ app
 // User routes
   .route('/user', userRoute)
 
-
-export default app
+export default {
+  port: process.env.PORT,
+  fetch: app.fetch,
+}
